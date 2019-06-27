@@ -1,0 +1,832 @@
+
+//主色 黄色
+@main_color: #0e83f0;
+@gray_color: #f8f8f8;
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+/*
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+*/
+ol,ul { 
+    list-style: none; 
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+q:before,q:after { 
+    content:”; 
+} 
+abbr,acronym { 
+    border: 0; 
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #333;
+}
+html,body{
+  margin:0px;
+  height:100%;
+  font-family: "Microsoft YaHei UI", "微软雅黑", "宋体";
+}
+
+body{
+	max-width: 640px;
+	margin: 0 auto;
+}
+img{max-width: 100%;}
+.swiper-container{margin-bottom: -5px;}
+.content-wrapper{
+	padding: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    text-align: justify;
+    word-wrap: break-word;
+    img{max-width: 100%;}
+
+    h1,h2,h3,h4,h5,h6{
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    ol,ul { 
+        list-style: decimal inside; 
+    } 
+    p{margin-top: 5px;}
+}
+
+.post-header{
+    background-color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+
+}
+.post-title{
+	margin-bottom: 10px; color: @main_color;
+}
+.post-author{
+	display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+	img{width: 45px; height: 45px; border-radius: 50%; margin-right: 5px;}
+    .author-name{}
+    .post-time{font-size: 12px; color: #ccc;}
+}
+
+//WEI UI样式复写
+.weui-btn_primary {
+    background-color: @main_color;
+}
+.weui-media-box__desc{
+	-webkit-line-clamp: 1;
+	margin-bottom: 5px;
+    color: #4c4c4c;
+}
+.weui-media-box__info{
+	margin-top: 0;
+	font-size: 12px;
+	padding-bottom: 0;
+    color: #666;
+}
+.weui-media-box_appmsg{
+    align-items: normal;
+}
+.weui-grid:before{
+	border-right: none;
+}
+.top-nav{
+	height: 50px;line-height: 50px;font-size: 18px;text-align: center; border-bottom: 1px solid #ddd;
+}
+ul.pagination{
+	opacity: 0;
+	position: fixed;
+}
+
+pre{
+	border: none;
+	background-color: transparent;
+}
+.weui-panel__hd{
+	color: #333;
+	font-weight: bold;
+}
+.weui-cell__ft{
+	font-size: 14px;
+}
+.weui-article h1{
+	font-weight: bold;
+	color: #3daefd;
+	line-height: 30px;
+}
+.weui-article section{
+	padding-top: 15px; 
+	border-top: 1px solid #ddd;
+}
+.weui-article .page__desc{
+	color: #999;
+}
+
+.weui-grid__icon{
+	width: 45px;
+	height: 45px;
+	font-size: 28px;
+}
+
+.weui-media-box__title{
+    font-size: 14px;
+}
+.weui-media-box__hd.hkj{width: 90px; }
+.weui-media-box__title.hkj{
+    max-height: 50px; 
+    font-size: 14px;
+	margin-bottom: 5px;
+    line-height: 25px; 
+    word-break:break-all;
+    overflow:hidden;
+	white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.dk .weui-media-box__title{
+	margin-right: 150px;
+}
+.weui-media-box{
+	position: relative;
+}
+
+
+.swiper_wrap{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    //background-color: #e64037;
+    margin-bottom: 10px;
+}
+.swiper_wrap ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    float: right;
+    color: #444;
+    margin-top: 1px;
+}
+.swiper_wrap ul li{
+    line-height: 40px;
+    margin: 0 24px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.swiper_wrap ul li a{white-space: nowrap;}
+
+.swiper_wrap .lt{
+    position: absolute;
+    left: -1px;
+    top: 7px;
+    font-family: "宋体";
+    font-weight: bold;
+    color: #AAAAAA;
+}
+.swiper_wrap .gt{
+    position: absolute;
+    right: 26px;
+    top: 7px;
+    font-family: "宋体";
+    font-weight: bold;
+    color: #AAAAAA;
+}
+ .swiper_wrap .font_inner a{
+    color: #000;
+}
+ .swiper_wrap a:hover{
+    color: #FA9101;
+}
+
+.weui-media-box{
+	padding: 10px 15px;
+	border-bottom: 1px solid #eee;
+}
+
+//底部申请按钮
+.shenqing-btn{
+	position: fixed; bottom: 0; left: 0; right: 0; height: 50px; text-align: center; color: #fff; background-color: #13c065; line-height: 50px; font-size: 18px;
+}
+
+
+/**
+ * 银行卡页面样式
+ */
+.hot-bank{
+    height: 52px;
+    background: #fff;
+    padding: 18px 15px;
+    //border-bottom: 1px solid #eaeaea;
+    position:relative;
+    box-sizing: border-box;
+}
+.hot-bank p{
+    font-size: 15px;
+    color: #333;
+    padding-left: 2%;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 8px;
+}
+.hot-bank p:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    width: 4px;
+    height: 15px;
+    background: #e64037;
+    left: 15px;
+}
+.hot-bank .city{
+    font-size: 12px;
+    color: #999;
+    padding-right: 11px;
+    position: absolute;
+    top: 0;
+    right: 24px;
+}
+.all_bank{
+    width: 100%;
+    background: #fff;
+    display: block;
+    padding: 0 0 7px;
+}
+.all_bank:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+.all_bank>a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.bank dt {
+    padding-top: 21px;
+    padding-bottom: 10px;
+}
+.all_bank .bank dt img{
+   width: 45px;
+   height: 45px;
+}
+.all_bank .bank dd{
+    font-size: 14px;
+    color: #333;
+}
+.bank em{
+    width: 74px;
+    height: 34px;
+    border-radius: 15px;
+    background: #ffa64c;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-style: normal;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    line-height: 34px;
+    font-size: 45px;
+}
+.all_em{
+    width: 100%;
+    text-align: center;
+    display: block;
+    background: #fff;
+}
+.all_em img{
+    width: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+.all_em:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.card{ overflow:hidden; background-color:#fff;}
+.r_left{
+    float: left;
+    width: 50%;
+    border-right: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+.r_right{float:right;width: 50%;}
+.carbox{
+    height: 153px;
+}
+.zhutikbox{height: 77px}
+
+.bjhui{
+    border-top: 1px solid #eaeaea;
+    img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.r_right div.bjhui{height: 70px;position: relative;}
+
+.r_left h3,.r_right h3{ 
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+}
+.r_left  p,.r_right p{
+    color: #999;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.flh3p{
+    margin-left: 7px;
+    padding-top: 7px;
+    float: left;}
+
+.chaoskbox img {
+    width: 42px;
+    height: 46px;
+    margin-right: 24px;
+    margin-top: 14px;
+}
+
+.r-imgicon{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.flh3p h3{
+    color: #333;
+    font-size: 14px;
+        font-weight: normal;
+}
+.flh3p p{
+    color: #999;
+    margin-top: 9px;
+    font-size: 12px;
+}
+.zjy_che{
+    position: absolute;
+    left: 52px;
+    z-index: 99;
+    width: 87px;
+    height: 78px;
+    top: 12px;
+}
+.zx_ha{
+        margin-top: 91px;
+}
+.zjy_ka{
+    margin-left: 7px;
+    /* margin-bottom: 14px; */
+}
+.zjy_bu{
+    background: #fff;
+    height:76px;
+}
+.zjy_left{
+    float: left;
+    width: 59%;
+    border-right: 1px solid #eaeaea;
+    height: 76px;
+}
+.zjy_right{
+    float: right;
+    width: 41%;
+}
+.zhu_ti{
+    height: 52px;
+    background: #fff;
+    padding: 18px 14px;
+    border-bottom: 1px solid #eaeaea;
+    position:relative;
+    box-sizing: border-box;
+}
+.zhu_ti p{
+    font-size: 14px;
+    color: #333;
+    padding-left: 2%;
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 7px;
+}
+.zhu_ti p:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    width: 4px;
+    height: 14px;
+    background: #e64037;
+    left: 14px;
+}
+.zhu_ti a{
+    float: right;
+    line-height: 10px;
+    vertical-align: top;
+}
+.zhu_ti span{
+    font-size: 12px;
+    color: #999;
+    background: url(http://credit.haodai.com/static/shenma/img/more.png) no-repeat;
+    background-position: right 48%;
+    background-size: auto 80%;
+    padding-right: 11px;
+}
+.card_zhu_ti span{
+    font-size: 12px;
+    color: #999;
+    background: url(http://credit.haodai.com/static/shenma/img/more.png) no-repeat;
+    background-position: right 48%;
+    background-size: auto 80%;
+    padding-right: 11px;
+}
+.zjy_xin{
+    background: #fff;
+    height: 211px;
+    border-top: 1px solid #eaeaea;
+}
+.zjy_xin .zjy_card{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    margin-top: 38px;
+}
+.zjy_xin .zjy_card dt img{
+    width: 50%;
+}
+.zjy_xin .zjy_card dd{
+    margin-top: 9px;
+    font-size: 24px;
+    color: #222633;
+}
+
+.insurance{
+    background: #fff;
+/*  display: inline-block;*/
+    width: 100%;
+/*        border-top: 1px solid #e6e6e6;*/
+    
+}
+.insurance dl dt{
+    float: left;
+    width: 99px;
+    height: 62px;
+    margin: 10px 7px 10px 14px
+}
+.insurance dl dt img{
+    width: 99px;
+    height: 62px;
+    position: relative;
+        border-radius: 4px;
+}
+.insurance dl dd{
+    float: left;
+    line-height: 21px;
+    margin-top: 10px;
+    width:238px;
+}
+.insurance dl dd .card_p1{
+    font-size: 14px;
+    color: #222633;
+    position: relative;
+}
+.card_p1 i {
+    display:block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 14px;
+    margin-right: 8px;
+    color: #333;
+}
+.feature_box span {
+    border: 1px solid #ffa21d;
+    background: #fffaf3;
+    text-align: center;
+    font-style: normal;
+    border-radius: 11px;
+    font-size: 10px;
+    color: #ffa21d;
+    padding: 1px 4px;
+    position: relative;
+    vertical-align: top;
+    //margin-left: 7px;
+    padding-top: 4px;
+}
+.feature_box span:nth-child(1){border: 1px solid #fc3fa5; color: #fc3fa5;}
+.feature_box span:nth-child(2){border: 1px solid #fc4a68; color: #fc4a68;}
+.feature_box span:nth-child(3){border: 1px solid #fe9e15; color: #fe9e15;}
+.insurance dl dd .card_p2{
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 3px;
+}
+.insurance dl dd .card_p3{
+    font-size: 12px;
+    color: #999;
+    line-height: 28px;
+}
+.insurance dl dd .card_p3 span{
+    color: #ffa21d;
+}
+
+.insurance p span a{
+    color: #999;
+}
+
+.in_xa{
+    width: 100%;
+    display: inline-block;
+}
+.in_xa:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.in_ce_img{
+    float: left;
+    position: absolute;
+}
+.in_ce_img:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.in_ce{
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+.in_ce em{
+    background: url(http://credit.haodai.com/static/shenma/img/NO.png) no-repeat;
+    position: absolute;
+    background-size: 100%;
+    bottom: 6px;
+    left: 12px;
+    z-index: 999;
+    width: 42px;
+    height: 24px;
+    font-style: normal;
+    color: #fff;
+    font-size: 12px;
+    line-height: 21px;
+    padding-left: 3px;
+}
+.in_ce_img img{
+    float: left;
+    width: 99px;
+    height: 62px;
+    margin: 15px 7px 15px 14px
+}
+a.in_ljsq{
+    position: absolute;
+    float: right;
+    display: block;
+    background: @main_color;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    right: 14px;
+    width: 69px;
+    height: 23px;
+    line-height: 24px;
+    bottom: 10px;
+}
+.insurance dl dd .card_p1{
+    font-size: 14px;
+    color: #222633;
+    position: relative;
+}
+.card_p1 i {
+    display:block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 14px;
+    margin-right: 8px;
+    color: #333;
+}
+.card_p3 a{ 
+    float: right;
+    display: block;
+    width: 38%;
+    background: #ff8174;
+    color: #fff;
+    border-radius: 17;
+    text-align: center;
+    font-size: 12px;
+}
+/*两个标签*/
+.card_p1 i.feature2{
+    margin-right: 94px;
+}
+/*一个标签的*/
+.card_p1 .feature1{
+   margin-right: 43px;
+}
+.card_p1 .credit_card{
+    width: 100%;
+    padding: 15px;
+}
+.feature_box{
+    position: absolute;
+    right:14px;
+    top:15px;
+}
+
+/**
+ * 顶部后退标题
+ */
+.header{
+    position: relative;
+    height: 43px;
+    line-height: 43px;
+    background-color: @main_color;
+    color: #fff;
+}
+.header>p{
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.header .go_return{
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 2rem; */
+    padding-left: 33px;
+    height: 100%;
+    text-align: center;
+    display: block;
+    background: url(http://credit.haodai.com/static/shenma/img/deng_left.png) no-repeat;
+    background-position: 14px center;
+    /* text-indent: 0.55rem; */
+    line-height: 42px;
+    background-size: 10px auto;
+    vertical-align: middle;
+}
+.header .right_btn{
+    display: block;
+    position: absolute;
+    color:#fff;
+    top:0px;
+    right:0px;
+    font-size:48px;
+    line-height: 76px;
+    padding-left:26px;
+    padding-right:26px;
+}
+
+a.yue{
+    text-align: center;
+    color: @main_color;
+    margin-top: 15px;
+}
+.alert{padding: 15px;}
+.alert-danger{color: #ff8174;}
+.alert-success{color: #57c87a;}
+
+
+.pay{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+.pay-selector{
+    width: 80%;
+    background-color: #fff;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    overflow: hidden;
+    .header{
+        text-align: center;
+        padding: 15px 0;
+        background-color: #fcb02b;
+        .close{
+            position: absolute; 
+            right: 15px; 
+            top: 25px; 
+            width: 25px; 
+            height: 25px; 
+            //background-image: url('../assetimg/close-product.png'); 
+            background-size: cover;
+        }
+    }
+    .body{
+        margin: 0 20px;
+    }
+    .pay-item{
+        background-position: 15px center;
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        height: 65px;
+        line-height: 65px;
+        padding: 10px;
+        padding-left: 70px;
+        border-bottom: 1px solid #eee;
+    }
+    //.pay-weixin{background-image: url('../assetimg/pay-weixin.png')}
+    //.pay-ali{background-image: url('../assetimg/pay-alipay.png')}
+    //.pay-union{background-image: url('../assetimg/pay-union.png')}
+}
+
+a.join_member{
+    padding: 5px 35px; background-color: @main_color; color: #fff; display: inline-block; border-radius: 5px;
+}
+
+.weui-vcode-btn{
+    color: @main_color;
+}
+
+@media screen and (min-height: 438px){
+    .weui-msg__extra-area {
+        position: fixed;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.weui-btn_primary:not(.weui-btn_disabled):active
+{
+    color: hsla(0,0%,100%,.6);
+    background-color: @main_color;
+}
+.weui-btn_disabled.weui-btn_primary{
+    background-color: #ccc;
+}
+
+// tab切换
+.weui-navbar__item{padding: 8px 0;}
+.weui-navbar{background-color: #fff;}
+.weui-navbar__item:after{border-right: none;}
+.weui-grid:after{border-bottom: none;}
+.weui-navbar__item.weui-bar__item_on{
+    background-color: transparent; color: #5baaf7; font-weight: bold;
+    border-bottom: 1px solid @main_color;
+}
+.weui-btn, .weui-cells, .weui-actionsheet__cell{font-size: 15px;}
+.weui-tabbar__label.active{color: @main_color; font-weight: bold;}
+.weui-media-box_appmsg .weui-media-box__bd{margin-top: -5px;}
+
+.weui-media-box__info__meta.theme_color{color: @main_color;}
+.theme_color, a.theme_color{color: @main_color;}
+a.weui-btn_primary{color: #fff;}
+
+.header-title{color: #333; font-size: 16px; padding: 5px;}

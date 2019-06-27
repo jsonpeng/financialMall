@@ -1,0 +1,28 @@
+body{background-color:#272727;margin:0 10px;}
+.nav_tip{width: 100%;height: 50px;display: flex;align-items: center;}
+.nav_tip .img .backTo{display: inline-block;width:10px;height: 15px;background-image: url('../images/card/back.png');background-repeat:no-repeat;background-position: center;background-size:cover;}
+.nav_tip .img a img{width: 100%;}
+.nav_tip .titile{font-size:16px;width: 100%;text-align: center;color: #fff;}
+.user_info{display: flex;flex-direction:column;align-items: center;color: #fff;margin-bottom:22.5px;}
+.user_info .user_img{width:75px;height: 75px;border-radius: 50%;overflow: hidden;margin:20px 0 10px 0;}
+.user_info .user_img img{width: 100%;}
+.user_info .user_name{font-size: 16px;line-height: 1.7em;}
+.user_info .user_level{font-size: 14px;}
+.box{margin:0 15px;overflow: hidden;color: #333;font-size: 14px;}
+.wrap{white-space: nowrap;overflow-x: scroll;}
+.wrap .item{display: inline-block;margin-right:15px;white-space: nowrap;background-color:#fff;border-radius:5px;width:80%;box-sizing: border-box;padding:20px 25px;}
+.wrap .pic{width:115px;height: 115px;margin: 0 auto;position: relative;}
+.wrap .pic img{width: 100%;}
+.wrap .pic .user_txt{position: absolute;top:72px;left:29px;color: #fff;}
+.wrap .tip{text-decoration: underline;}
+.wrap .icon1,.wrap .icon2{display: inline-block;width:16px;height: 16px;margin-right: 10px;background-repeat: no-repeat;background-position: center;background-size:cover;}
+.wrap .icon1{background-image: url('../images/card/right.png');}
+.wrap .icon2{background-image: url('../images/card/no.png');}
+.wrap ul{list-style: none;padding-left:0;}
+.wrap ul li{display: flex;align-items: center;line-height: 2em;}
+.wrap .time,.wrap .price{text-decoration: underline;line-height: 1.7em;}
+.wrap .price span{font-size: 16px;color: #f03030;font-weight: bold;}
+.wrap .btn{width: 103px;height: 24px;margin: 0 auto;margin-top:20px;position: relative;}
+.wrap .btn img{width: 100%;}
+.wrap .btn .btn_txt{display: inline-block;margin: 0;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);color: #fff;transform-origin:50% 50%;}
+

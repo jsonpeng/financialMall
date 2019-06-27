@@ -1,0 +1,29 @@
+.required,.bitian{
+	color: orange;
+}
+
+.sidebar-toggle.fourset.active{
+	background: #3c8dbc;
+    color: white;
+}
+
+.sidebar-menu>li {
+    margin-top: 5px;
+}
+
+.sidebar-menu li.active>a{
+	margin-top: 5px;
+    color: white;
+    background: #3c8dbc;
+    width: 125px;
+}
+
+.col-lg-10 {
+    width: 72%;
+}
+
+/*顶部导航*/
+.main-header .sidebar-toggle:hover {
+    color: white;
+    background: #3c8dbc;
+}

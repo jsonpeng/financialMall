@@ -1,0 +1,34 @@
+<?php
+
+return [
+
+    'PAYS_API_UID' => env('PAYS_API_UID'),
+    'PAYS_API_TOKEN' => env('PAYS_API_TOKEN'),
+
+    'OPEN_PAYSAPI_ALIPAY' => env('OPEN_PAYSAPI_ALIPAY'),
+    'OPEN_PAYSAPI_ALIPAY_MOBILE' => env('OPEN_PAYSAPI_ALIPAY_MOBILE'),
+    'OPEN_PAYSAPI_WEIXIN' => env('OPEN_PAYSAPI_WEIXIN'),
+    'OPEN_WECHAT_PAY' => env('OPEN_WECHAT_PAY'),
+    
+    'STATION_ID' => env('STATION_ID'),
+    'USER_ID' => env('USER_ID'),
+
+    'OPEN_MEM_FENYONG' => env('OPEN_MEM_FENYONG'),
+
+    'timecache' => 10,
+
+    'JIFEN_MCH_ID'=> env('JIFEN_MCH_ID'),
+    'JIFEN_STATION_ID'=> env('JIFEN_STATION_ID'),
+    'JIFEN_PUB_KEY'=> env('JIFEN_PUB_KEY'),
+
+    'OPEN_WEB'=> env('OPEN_WEB'),
+    'OPEN_SHARE'=> env('OPEN_SHARE'),
+
+    'EDIT_CREDIT_CARD' => env('EDIT_CREDIT_CARD'),
+
+    'JIFEN_USER_PERCENT' => env('JIFEN_USER_PERCENT'),
+    'JIFEN_LEVEL1_PERCENT' => env('JIFEN_LEVEL1_PERCENT'),
+    'JIFEN_LEVEL2_PERCENT' => env('JIFEN_LEVEL2_PERCENT'),
+
+    'EDIT_HKJ' => env('EDIT_HKJ'),
+];
